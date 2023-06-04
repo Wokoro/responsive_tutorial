@@ -4,7 +4,79 @@
     margin: 0;
 }
 
+body{
+    padding: 1em;
+    font-family: 'Poppins';
+}
+
 h1{
     background: violet;
     color: white;
+}
+
+nav > ul {
+    list-style: none;
+}
+
+nav > ul > li{
+    padding: 0.5em 0;
+    font-family: sans-serif;
+}
+
+p {
+    margin: 0.6em 0;
+}
+
+.summary {
+    margin-top: 1.5em;
+}
+
+.summary > div {
+    margin-bottom: 3em;
+}
+
+.summary .main-text > p, .extra, .overview > p{
+    color: #9C9C9C;
+    text-align: justify;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.extra {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 976px){
+    body{
+        padding: 2.5em;
+    }
+
+    .overview p:last-child{
+        margin: 0;
+    }
+
+    nav > ul{
+        display: flex;
+        /* width: 60%; */
+        justify-self: right;
+        gap: 1.5em
+    }
+
+    nav {
+        display: flex;
+        justify-content: right;
+    }
+
+    .summary{
+        display: flex;
+        gap: 2em
+    }
 }
